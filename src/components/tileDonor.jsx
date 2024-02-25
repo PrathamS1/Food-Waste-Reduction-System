@@ -1,5 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 
+// eslint-disable-next-line react/prop-types
 const AddItemModal = ({ closeModal }) => {
     const handleSubmit = (e) => {
       e.preventDefault();
@@ -100,7 +102,7 @@ const AddItemModal = ({ closeModal }) => {
   
   
 function TileDonor() {
-    const [isModalOpen, setIsModalOpen] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => {
         setIsModalOpen(true);
