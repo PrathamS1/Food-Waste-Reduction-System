@@ -47,12 +47,11 @@ const AddItemModal = ({ closeModal }) => {
   const styles = {
     modalOverlay: {
       width: '450px',
+      zIndex:"100",
       height: '100%',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      zIndex:"800",
-      
     },
     modalContainer: {
         border: '3px solid',
@@ -62,7 +61,7 @@ const AddItemModal = ({ closeModal }) => {
       boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
       width: '500px',
       maxWidth: '400px',
-      zIndex:"10" // Added for close button positioning
+      zIndex:"100" // Added for close button positioning
     },
     close: {
       position: 'absolute',
@@ -101,7 +100,7 @@ const AddItemModal = ({ closeModal }) => {
   
   
 function TileDonor() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(true);
 
     const openModal = () => {
         setIsModalOpen(true);
