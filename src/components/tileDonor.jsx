@@ -16,17 +16,17 @@ const AddItemModal = ({ closeModal }) => {
           <h2>Add Item Form</h2>
           <form onSubmit={handleSubmit}>
             <div style={styles.formGroup}>
-              <label htmlFor="itemName">Item Name:</label>
+              <label htmlFor="itemName">Food Name:</label>
               <input type="text" id="itemName" name="itemName" style={styles.input} required />
             </div>
   
             <div style={styles.formGroup}>
-              <label htmlFor="itemType">Item Type:</label>
+              <label htmlFor="itemType">Food Detail:</label>
               <input type="text" id="itemType" name="itemType" style={styles.input} required />
             </div>
   
             <div style={styles.formGroup}>
-              <label htmlFor="itemQuantity">Item Quantity:</label>
+              <label htmlFor="itemQuantity">Food Quantity:</label>
               <input type="number" id="itemQuantity" name="itemQuantity" style={styles.input} required />
             </div>
   
@@ -67,7 +67,7 @@ const AddItemModal = ({ closeModal }) => {
     close: {
       position: 'absolute',
       top: '10px',
-      right: '10px',
+      right: '-80px',
       cursor: 'pointer',
     },
     formGroup: {
